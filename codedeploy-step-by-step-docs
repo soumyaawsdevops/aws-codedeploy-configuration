@@ -1,0 +1,4 @@
+Create Service Account & Role for EC2 Instane with Custom Profile:
+Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-service-role.html ( Follow: Step1 to Step4)
+Create EC2 Instance to Deploy an Application by CodeDeploy
+Ref: https://github.com/sbiswas232/aws-codedeploy-configuration/blob/main/ec2_configuration_codedeploy_cmd.txt
