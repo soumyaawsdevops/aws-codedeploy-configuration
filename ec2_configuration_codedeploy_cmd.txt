@@ -1,0 +1,29 @@
+    1  apt-get update 
+    2  systemctl status codedeploy-agent
+    3  sudo apt install ruby-full
+    4  sudo apt install wget
+    5  systemctl status codedeploy-agent
+    6  cd /home/ubuntu
+    7  wget https://aws-codedeploy-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/install
+    8  ls -l
+    9  chmod +x ./install
+   10  ls -l
+   11  sudo ./install auto
+   12  ./install auto > /tmp/logfile
+   13  systemctl status codedeploy-agent
+   14  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server  --minimum-healthy-hosts type=FLEET_PERCENT,value=75
+   15  apt install aws-cli
+   16  apt-get update 
+   17  snap install aws-cli
+   18  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   19  apt install zip
+   20  unzip awscliv2.zip
+   21  ./aws/install
+   22  aws --version
+   23  aws configure
+   24  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server  --minimum-healthy-hosts type=FLEET_PERCENT,value=75
+   25  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server --minimum-healthy-hosts type=HOST_COUNT,value=300 --zonal-config '{"monitorDurationInSeconds":3600,"minimumHealthyHostsPerZone":{"type":"HOST_COUNT","value":50}}'
+   26  history
+   27  cd 
+   28  history
+   29  history > ec2_configuration_codedeploy_cmd.txt
