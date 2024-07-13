@@ -1,0 +1,94 @@
+    1  apt-get update
+    2  pwd
+    3  cd /home/ubuntu/
+    4  wget https://aws-codedeploy-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/install
+    5  chmod +x ./install
+    6  ls -lrt
+    7  rm -rf install 
+    8  wget https://aws-codedeploy-eu-north-1.s3.eu-north-1.amazonaws.com/latest/install
+    9  chmod +x ./install
+   10  ./install auto
+   11  ls -lrt
+   12  ./install auto
+   13  apt install ruby-full
+   14  ./install auto
+   15  systemctl status codedeploy-agent
+   16  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server  --minimum-healthy-hosts type=FLEET_PERCENT,value=75
+   17  systemctl status codedeploy-agent
+   18  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server  --minimum-healthy-hosts type=FLEET_PERCENT,value=75
+   19  apt-get install aws-cli
+   20  apt  install awscli
+   21  snap info aws-cli
+   22  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   23  apt install zip
+   24  unzip awscliv2.zip
+   25  /usr/local/bin/aws --version
+   26  aws configure
+   27  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server  --minimum-healthy-hosts type=FLEET_PERCENT,value=75
+   28  aws deploy create-deployment-config --deployment-config-name Code-Deploy-Server --minimum-healthy-hosts type=HOST_COUNT,value=300 --zonal-config '{"monitorDurationInSeconds":3600,"minimumHealthyHostsPerZone":{"type":"HOST_COUNT","value":50}}'
+   29  ls -lrt
+   30  cd /tmp/
+   31  wget https://github.com/WordPress/WordPress/archive/master.zip
+   32  ls -lrt
+   33  unzip master -d /tmp/WordPress_Temp
+   34  ls -lrt
+   35  mkdir -p /tmp/WordPress
+   36  ls -lrt
+   37  cp -paf /tmp/WordPress_Temp/WordPress-master/* /tmp/WordPress
+   38  ls -lrt
+   39  cd WordPress
+   40  ls -lrt
+   41  cd ..
+   42  rm -rf /tmp/WordPress_Temp
+   43  ls -lrt
+   44  rm -f master
+   45  ls -lrt
+   46  mkdir -p /tmp/WordPress/scripts
+   47  cd WordPress/scripts/
+   48  ls -lrt
+   49  vi install_dependencies.sh
+   50  ls -lrt
+   51  vi install_dependencies.sh
+   52  ls -lrt
+   53  vi install_dependencies.sh
+   54  ls -lrt
+   55  vi start_server.sh
+   56  systemctl status httpd.service
+   57  vi install_dependencies.sh
+   58  ls -lrt
+   59  cat start_server.sh 
+   60  vi stop_server.sh
+   61  ls -lrt
+   62  vi create_test_db.sh
+   63  vi change_permissions.sh
+   64  ls -lrt
+   65  chmod +x /tmp/WordPress/scripts/*
+   66  ls -lrt
+   67  cd ..
+   68  ls -lrt
+   69  ls -lrt appspec.yml
+   70  vi appspec.yml
+   71  nano appspec.yml
+   72  ls -lrt
+   73  cat appspec.yml 
+   74  ls -lrt
+   75  aws s3 mb s3://DOC-EXAMPLE-BUCKET --region eu-north-1
+   76  aws --vesrion
+   77  aws -vesrion
+   78  history
+   79  /usr/local/bin/aws --version
+   80  aws s3 mb s3://doc-example-bucket --region eu-north-1
+   81  aws s3 mb s3://soumyaclassbucket --region eu-north-1
+   82  ls-lrt
+   83  ls -lrt
+   84  cd scripts/
+   85  ls -lrt
+   86  cd ..
+   87  cd /tmp/WordPress
+   88  aws deploy create-application --application-name WordPress_App
+   89  aws deploy push   --application-name WordPress_App   --s3-location s3://DOC-EXAMPLE-BUCKET/WordPressApp.zip \
+   90  clear
+   91  aws deploy push   --application-name WordPress_App   --s3-location s3://soumyaclassbucket/WordPressApp.zip   --ignore-hidden-files
+   92  history
+   93  cd /tmp/
+   94  history > WordPress_App_creation_command.txt
